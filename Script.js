@@ -11,6 +11,8 @@ window.onload = () => {
 }
 
 //botao escolhido no html
+
+//Aqui estamos pegando por id o botão ja existente no html e declarando ele como uma variavel constante no JavaScript
 const botao = document.getElementById("botaoEscolhido");
 
 const botaoDir = document.getElementById("setaDireita");
@@ -35,6 +37,8 @@ function andarPraEsquerda(){
 }
 
 //Mudar a peca que esta visivel
+// Cria variaveis locais de acordo com o id de cada peca e faz a verificacao se o atributo visible da peca ta true e muda pra false
+// Tem que fazer isso pra todas as 4 pecas
 function mudaPeca() {
 	var p1 = document.getElementById("peca1");
 	var p2 = document.getElementById("peca2");
@@ -44,7 +48,8 @@ function mudaPeca() {
        }
  }
 
-//adicionando evento de click, com a função andarParaDireita feita acima
+//adicionando evento de click
+//Aqui estamos adicionando ao nosso botao uma lista de eventos... por enquanto so estamos vazendo um evento "Click" que vai chamar a funcao que criamos
 botao.addEventListener("click", rotacionar);
 botaoDir.addEventListener("click", andarPraDireita);
 botaoEsq.addEventListener("click", andarPraEsquerda);

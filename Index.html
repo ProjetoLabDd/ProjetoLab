@@ -442,26 +442,30 @@
       <!-- carregando os moedelos gltf -->
       <a-gltf-model
         id="peca1"
+        class="peca"
         src="https://raw.githubusercontent.com/KurtRodrigues/Project01/master/modelos%203D%20Porta%20avi%C3%A3o/1.2.gltf"
         shadow="cast: true"
         position="0 0 0"
         rotation="0 0 0"
         scale="1 1 1"
-        visible="false"
+        visible="true"
       ></a-gltf-model>
       <!--"shadow="cast: true" habilita sombra dinamica -->
       <a-gltf-model
         id="peca2"
+        class="peca"
+
         src="https://raw.githubusercontent.com/KurtRodrigues/Project01/master/modelos%203D%20Porta%20avi%C3%A3o/2.2.gltf"
         position="0 0 0"
         rotation="0 0 0"
         scale="1 1 1"
-        visible="true"
+        visible="false"
         shadow="cast: false"
       ></a-gltf-model>
       <!--"shadow="cast: true" habilita sombra dinamica -->
       <a-gltf-model
         id="peca3"
+        class="peca"
         src="https://raw.githubusercontent.com/KurtRodrigues/Project01/master/modelos%203D%20Porta%20avi%C3%A3o/3.2.gltf"
         position="0 0 0"
         rotation="0 0 0"
@@ -472,6 +476,7 @@
       <!--"shadow="cast: true" habilita sombra dinamica -->
       <a-gltf-model
         id="peca4"
+        class="peca"
         src="https://raw.githubusercontent.com/KurtRodrigues/Project01/master/modelos%203D%20Porta%20avi%C3%A3o/4.2.gltf"
         position="0 0 0"
         rotation="0 0 0"
@@ -779,15 +784,25 @@
         scale="1 1 1"
         visible="true"
       ></a-gltf-model>
+
       
-      <a-gltf-model
-        id="botaoEscolhido"
+        <a-gltf-model
+        id="botaoRotEsquerda"
         src="https://raw.githubusercontent.com/KurtRodrigues/Project01/master/modelos%203D%20Porta%20avi%C3%A3o/arrow-left.gltf"
-        position="0.4 0.1 0"
+        position="0.35 0.1 0"
         rotation="0 0 0"
         scale="1 1 1"
         visible="true"
       ></a-gltf-model>
+  <a-gltf-model
+        id="botaoRotDireita"
+        src="https://raw.githubusercontent.com/KurtRodrigues/Project01/master/modelos%203D%20Porta%20avi%C3%A3o/arrow-right.gltf"
+        position="-0.35 0.1 0"
+        rotation="0 0 0"
+        scale="1 1 1"
+        visible="true"
+      ></a-gltf-model>
+
       
       <a-gltf-model
         id="setaEsquerda0"
@@ -967,4 +982,3 @@
 
   </body>
 </html>
-
